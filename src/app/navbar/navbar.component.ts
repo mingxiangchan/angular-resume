@@ -6,12 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  btn1 = "Hello"
-  btn2 = "Resume"
-  btn3 = "Portfolio"
-  btn4 = "Blog"
-  btn5 = "Contact Me"
+  buttons = [
+    "Hello",
+    "Resume",
+    "Portfolio",
+    "Blog",
+    "Contact Me"
+  ]
   currentPage: string = "Hello";
+  arr = [1,2,3,4,5,6]
 
   constructor() { }
 

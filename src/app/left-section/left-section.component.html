@@ -4,9 +4,7 @@
 
 <img [src]="imageUrl" id="avatar">
 <div>
-    <p>Age: 38 years</p>
-    <p>Name: John Doe</p>
-    <p>Degree: MBA</p>
-    <p>Experience: 15 years</p>
-    <p>Location: Rome, Italy</p>
+    <p *ngFor="let detail of details">
+        {{detail}}
+    </p>
 </div>
