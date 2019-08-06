@@ -6,7 +6,7 @@ class="about-me"
     (mouseenter)="onMouseEnter()"
     (mouseleave)="onMouseLeave()"
 >
-    <p *ngFor="let detail of details">
-        {{detail}}
+    <p *ngFor="let detail of details | keyvalue">
+        {{detail.key}}: {{detail.value}}
     </p>
 </div>
