@@ -1,0 +1,9 @@
+<div class="header">
+    <h2
+        [style.color]="toggled ? 'red' : 'black'"
+    >RESUME</h2>
+    <div
+        [style.background-color]="isRed ? 'red' : 'blue'"
+        (click)="onClick()"
+    >Edit Resume</div>
+</div>
