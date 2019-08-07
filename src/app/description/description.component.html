@@ -1,5 +1,11 @@
 <h4>I am a Web Designer</h4>
+<button
+    (click)="onClick()"
+>Toggle Hide</button>
 <hr />
-<p *ngFor="let para of paras">
-    {{para}}
-</p>
+<div *ngIf="isNotHidden">
+    <p *ngFor="let para of paras">
+        {{para}}
+    </p>
+
+</div>

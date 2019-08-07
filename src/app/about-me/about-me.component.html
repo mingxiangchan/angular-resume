@@ -1,12 +1,11 @@
 <h4>About Me</h4>
+
+<button (click)="onClick()">Toggle Hide</button>
 <hr />
-<div 
-class="about-me"
-    [style.background-color]="isBlue ? 'blue' : 'white'"
-    (mouseenter)="onMouseEnter()"
-    (mouseleave)="onMouseLeave()"
->
+<div class="about-me" [style.background-color]="isBlue ? 'blue' : 'white'" (mouseenter)="onMouseEnter()"
+    (mouseleave)="onMouseLeave()" *ngIf="isNotHidden">
     <p *ngFor="let detail of details | keyvalue">
         {{detail.key}}: {{detail.value}}
     </p>
+
 </div>

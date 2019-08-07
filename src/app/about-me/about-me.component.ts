@@ -20,6 +20,8 @@ export class AboutMeComponent implements OnInit {
     Name: "John Doe"
   }
 
+  isNotHidden = true
+
   constructor() { }
 
   ngOnInit() {
@@ -31,6 +33,10 @@ export class AboutMeComponent implements OnInit {
 
   onMouseLeave() {
     this.isBlue = false
+  }
+
+  onClick() {
+    this.isNotHidden = !this.isNotHidden
   }
 
 }
